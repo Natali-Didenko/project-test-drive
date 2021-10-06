@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progect Test Drive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--contacts-section-->
+        <section class="contacts-section">
+            <a class="telegram-link" href="">
+                <img class="telegram-icon" src="./img /icons/telegram1.svg" alt="telegram">
+            </a>
+            <a class="viber-link" href="">
+                <img class="viber-icon" src="./img /icons/viber1.svg" alt="viber">
+            </a>
+            <a class="phone-link-icon" href="tel:+380000000000">
+                <img class="phone-icon" src="./img /icons/phone1.svg" alt="phone">
+            </a>
+            <a class="phone-link-number" href="tel:+380000000000">+380 00 000 00 00</a>
+        </section>
+        <!--experience-section-->
+        <section class="experience-section">
+            <img class="my-photo" src="./img /Group 2.jpg" alt="photo">
+            <div>
+                <a class="icon icon-linkedin" href="https://www.linkedin.com">
+                    <img src="./img /icons/linkedin-icon.svg" alt="linkedin">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="icon" src="./img /icons/fb-icon.svg" alt="fb">
+                </a>
+            </div>
+            <div class="experience-description">
+                <p class="experience-description-text experience-description-text-first">32 готовых проекта</p>
+                <p class="experience-description-text">2 года опыта</p>
+            </div>
+            <div class="technogies-container">
+                <img class="js-icon" src="./img /icons/js-icon.svg" alt="js">
+                <img class="react-icon" src="./img /icons/react-icon.svg" alt="react">
+                <img src="./img /icons/nodejs-icon.svg" alt="node">
+            </div>
+            <a class="my-progects-link" href="https://github.com/">Мои работы</a>
+        </section>
+        <!--my-info-section-->
+        <section class="my-info-section">
+            <h2 class="my-name">Привет! Я - Александра Тур</h2>
+            <h1 class="my-profession">Я делаю сайты</h1>
+            <p class="my-location">Живу в Перу</p>
+            <p class="my-workstyle">Работаю удаленно</p>
+            <p class="my-description">Я - человек-оркестр. В одиночку заменяю целую веб-студию.</p>
+            <div>
+                <p class="me-skillls-title">Умею:</p>
+                <ul class="my-skills-list">
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">
+                            Управлять IT-проектами и командами;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">
+                            Senior Front End разработчик;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">
+                            < Middle Back End разработчик;/p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">
+                            Могу проконтролировать качество своего или вашего проекта, как QA -
+                            специалист.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--project-prise-section-->
+        <section class="project-prise">
+            <form class="project-prise-form" method="POST" name="contact" data-netlify="trye" id="project-prise-form">
+                <h4 class="project-prise-title">Рассчитай стоимость проекта</h4>
+                <div class="project-type-container">
+                    <label class="project-prise-form-fild-title" for="project-type">Тип сайта</label>
+                    <select class="project-prise-select" name="project-type" id="project-type">
+                        <option selected value="landing-page">Landing page</option>
+                        <option value="online-store">Online store</option>
+                        <option value="web-application">Web Application</option>
+                        <option value="mobile-application">Mobile Application</option>
+                    </select>
+                </div>
+                <div class="activity-type-container">
+                    <p class="project-prise-form-fild-title">Типы работ</p>
+                    <div class="activity-type-item">
+                        <input class="activity-type-checkbox" type="checkbox" name="project-management"
+                            id="project-management">
+                        <label class="activity-type-title" for="project-management">Project Managment</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input class="activity-type-checkbox" type="checkbox" name="design" id="design">
+                        <label class="activity-type-title" for="design">Design</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input class="activity-type-checkbox" type="checkbox" name="development" id="development">
+                        <label class="activity-type-title" for="development">Development</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input class="activity-type-checkbox" type="checkbox" name="qa" id="qa">
+                        <label class="activity-type-title" for="qa">QA</label>
+                    </div>
+                </div>
+                <div class="project-prise-container">
+                    <p class="project-prise-form-fild-title">Стоимость</p>
+                    <p class="project-prise-sum"> <span class="project-prise-sum-currency">$</span> <span
+                            id="total-price">0</span></p>
+                </div>
+                <div class="project-prise-colculate-btn-container">
+                    <button class="project-prise-colculate-btn">Отправить запрос</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="modal-bgd">
+        <div class="modal-container">
+            <button class="modal-close-btn">
+                <img src="./img /icons/close-icon.svg" alt="close-icon">
+            </button>
+            <img class="modal-icon" src="./img /icons/mail.svg" alt="mail-icon">
+            <h4 class="modat-title">Я свяжусь с вами на <br> протяжении ближайшего часа</h4>
+            <form class="modal-container-form" action="#">
+                <label class="user-email-title" for="user-email">Email</label>
+                <input class="user-email" type="email" name="user-email" id="user-email" placeholder="Укажите email">
+                <button class="modal-submit-btn" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="modal-bgd">
+            <div class="modal-container modal-container-success">
+                <button class="modal-close-btn">
+                    <img src="./img /icons/close-icon.svg" alt="close-icon">
+                </button>
+                <img class="modal-success-icon" src="./img /icons/success.svg" alt="success-icon">
+                <p class="modal-success-message">Все отлично!<br>Запрос отправлен </p>
+            </div>
+
+        </div>
+
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
