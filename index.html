@@ -70,7 +70,7 @@
                     </li>
                     <li class="my-skills-item">
                         <p class="my-skills-text">
-                            < Middle Back End разработчик;/p>
+                            Middle Back End разработчик; </p>
                     </li>
                     <li class="my-skills-item">
                         <p class="my-skills-text">
@@ -97,8 +97,8 @@
                     <p class="project-prise-form-fild-title">Типы работ</p>
                     <div class="activity-type-item">
                         <input class="activity-type-checkbox" type="checkbox" name="project-management"
-                            id="project-management">
-                        <label class="activity-type-title" for="project-management">Project Managment</label>
+                            id="pm">
+                        <label class="activity-type-title" for="pm">Project Managment</label>
                     </div>
                     <div class="activity-type-item">
                         <input class="activity-type-checkbox" type="checkbox" name="design" id="design">
@@ -118,26 +118,33 @@
                     <p class="project-prise-sum"> <span class="project-prise-sum-currency">$</span> <span
                             id="total-price">0</span></p>
                 </div>
+
+                    <input type="hidden" name="Email">
+
                 <div class="project-prise-colculate-btn-container">
                     <button class="project-prise-colculate-btn">Отправить запрос</button>
                 </div>
             </form>
         </section>
     </div>
-    <div class="modal-bgd">
+    <div class="modal-bgd" id="modal-email">
         <div class="modal-container">
             <button class="modal-close-btn">
                 <img src="./img /icons/close-icon.svg" alt="close-icon">
             </button>
             <img class="modal-icon" src="./img /icons/mail.svg" alt="mail-icon">
-            <h4 class="modat-title">Я свяжусь с вами на <br> протяжении ближайшего часа</h4>
-            <form class="modal-container-form" action="#">
-                <label class="user-email-title" for="user-email">Email</label>
-                <input class="user-email" type="email" name="user-email" id="user-email" placeholder="Укажите email">
+            <h4 class="modal-title">Я свяжусь с вами на <br> протяжении ближайшего часа</h4>
+            <form class="modal-container-form" action="#" id="modal-email-container">
+                <div class="email-input-container" id="email-input-container">
+                    <label class="user-email-title" for="user-email">Email</label>
+                    <input class="user-email" type="email" name="user-email" id="user-email" placeholder="Укажите email">
+                    <p class="email-error-text">Проверьте email</p>
+                </div>    
                 <button class="modal-submit-btn" type="submit">Отправить</button>
             </form>
         </div>
-        <div class="modal-bgd">
+    </div>
+    <div class="modal-bgd" id="success-modal">
             <div class="modal-container modal-container-success">
                 <button class="modal-close-btn">
                     <img src="./img /icons/close-icon.svg" alt="close-icon">
@@ -145,8 +152,8 @@
                 <img class="modal-success-icon" src="./img /icons/success.svg" alt="success-icon">
                 <p class="modal-success-message">Все отлично!<br>Запрос отправлен </p>
             </div>
-
-        </div>
+    </div>
+      
 
         <script src="./js/script.js"></script>
 </body>
