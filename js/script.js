@@ -70,6 +70,8 @@ const formEl = document.querySelector('#project-prise-form');
 const emailModal = document.querySelector('#modal-email');
 const successModal = document.querySelector('#success-modal');
 
+calculateWork();
+
 formEl.addEventListener('change', calculateWork);
 
 formEl.addEventListener('submit', function (event) {
@@ -82,6 +84,10 @@ const closeButtons = document.querySelectorAll('.modal-close-btn');
 
 closeButtons.forEach(function (closeBtn) {
     closeBtn.addEventListener('click', function () {
+        
+        const inputContainer = document.querySelector('#email-input-container');
+        inputContainer.classList.remove('email-input-container-error')
+        
         emailModal.classList.remove('modal-active');
         successModal.classList.remove('modal-active');
     });
@@ -111,7 +117,5 @@ modalEmailContainer.addEventListener('submit', function (event) {
    
         return;
         }
-    const inputContainer = document.querySelector('#email-input-container');
-
-    inputContainer.classList.add('email-input-container-error')
+   
 });
