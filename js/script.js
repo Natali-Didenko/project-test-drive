@@ -86,7 +86,7 @@ closeButtons.forEach(function (closeBtn) {
     closeBtn.addEventListener('click', function () {
         
         const inputContainer = document.querySelector('#email-input-container');
-        inputContainer.classList.remove('email-input-container-error')
+        inputContainer.classList.remove('email-input-container-error');
         
         emailModal.classList.remove('modal-active');
         successModal.classList.remove('modal-active');
@@ -117,5 +117,4 @@ modalEmailContainer.addEventListener('submit', function (event) {
    
         return;
         }
-   
 });
